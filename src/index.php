@@ -20,7 +20,7 @@
     <tr><th>背番号</th><th>ポジション</th><th>国籍</th><th>選手名</th><th>編集</th><th>削除</th></tr>
 <?php
     $pdo=new PDO($connect, USER, PASS);
-    foreach ($pdo->query('select * from final') as $row) {
+    foreach ($pdo->query('select * from player') as $row) {
         echo '<tr>';
         echo '<td>', $row['id'], '</td>';
         echo '<td>', $row['pg'], '</td>';
