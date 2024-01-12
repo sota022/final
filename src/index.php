@@ -17,7 +17,7 @@
         <h1>リヴァプール選手一覧</h1>
         <hr>
     <div><table>
-    <tr><th>背番号</th><th>ポジション</th><th>国籍</th><th>選手名</th><th>編集</th><th>削除</th></tr>
+    <tr><th>背番号</th><th>ポジション</th><th>国籍</th><th>選手名</th><th>更新</th><th>削除</th></tr>
 <?php
     $pdo=new PDO($connect, USER, PASS);
     foreach ($pdo->query('select * from player') as $row) {
