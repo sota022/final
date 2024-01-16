@@ -1,9 +1,10 @@
 <?php
-    const SERVER = 'mysql215.phy.lolipop.lan';
-    const DBNAME = 'LAA1516913-final';
-    const USER = 'LAA1516913';
-    const PASS = 'pass0122';
-    $connect = 'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8';
+   const SERVER = 'mysql220.phy.lolipop.lan';
+   const DBNAME = 'LAA1516913-final';
+   const USER = 'LAA1516913';
+   const PASS = 'pass0122';
+
+    $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -50,6 +51,6 @@ foreach ($pdo->query('select * from player') as $row) {
 }
 ?>
 </table></div>
-        <p><button onclick="location.href='itiran.php'">選手一覧へ戻る</button></p>
+        <p><button onclick="location.href='index.php'">選手一覧へ戻る</button></p>
     </body>
 </html>

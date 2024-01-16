@@ -1,0 +1,17 @@
+
+body {
+    background-color: #ef9c85;
+    font-family: 'Verdana','Hiragino Sans','Meiryo','sans-serif';
+  }
+  p{
+      text-align: center;
+  }
+  h1{
+    background-color: #f20d0d;
+      text-align: center;
+  }
+  div{
+      border: 3px solid rgb(250, 247, 247);
+      margin: 20px auto;
+      width: 700px;
+  }
