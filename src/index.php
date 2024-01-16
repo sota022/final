@@ -41,6 +41,5 @@
 ?>
     </table></div>
 <p><button onclick="location.href='insert.php'">選手登録</button>
-<button onclick="location.href=''">ログアウト</button></p>
     </body>
 </html>
