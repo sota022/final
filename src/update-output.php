@@ -11,15 +11,12 @@
 	<head>
 		<meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css">
-		<title>insert-output</title>
+		<title>update-output</title>
 	</head>
 	<body>
 <?php
     $pdo=new PDO($connect, USER, PASS);
-    $sql=$pdo->prepare('insert into player(id,pg,co,name) values(?,?,?,?)');
-    if (empty($_POST['id'])) {
-        echo '背番号を入力してください。';
-    } else
+    $sql=$pdo->prepare('update player set pg=?,co=?,name=? where id=?');
     if (empty($_POST['pg'])) {
         echo 'ポジションを入力してください。';
     }else
@@ -29,10 +26,10 @@
     if(empty($_POST['name'])){
         echo '選手名を入力してください。';
     }else
-    if($sql->execute([$_POST['id'],$_POST['pg'],$_POST['co'],$_POST['name']])){
-        echo '<font color="red">追加に成功しました。</font>';
+    if($sql->execute([$_POST['pg'],$_POST['co'],$_POST['name'],$_POST['id']])){
+        echo '<font color="red">更新に成功しました。</font>';
     }else{
-        echo '<font color="red">追加に失敗しました。</font>';
+        echo '<font color="red">更新に失敗しました。</font>';
     }   
 ?>
         <br><hr><br>

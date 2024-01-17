@@ -80,7 +80,7 @@
         echo '<td>', $row['co'], '</td>';
         echo '<td>', $row['name'], '</td>';
         echo '<td>';
-        echo '<button class="btn" type="submit" href="update.php">更新</button>';
+        echo '<a class="btn" href="update.php">更新</a>';
         echo '</td>';
         echo '<td>';
         echo '<form action="delete.php" method="post">';
