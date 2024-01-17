@@ -12,7 +12,6 @@
 国籍<input type="text" name="co"><br>
 選手名<input type="text" name="name"></p>
 <p><button type="submit">登録</button></p>
-<p><button submit="">ログアウト</button></p>
 </form>
 </body>
 </html>

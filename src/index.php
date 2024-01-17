@@ -14,6 +14,59 @@
 		<title>itiren</title>
 	</head>
 	<body>
+<div class="flex">
+    <li class="slider">
+  <div class="slider-item">
+    <img src="img/lfc.png" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l1.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l2.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l3.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l4.jpg" style="width: 200px;height: 200px; ">
+  </div>
+</li>
+<li class="slider">
+  <div class="slider-item">
+    <img src="img/l5.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l6.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l7.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l8.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l9.jpg" style="width: 200px;height: 200px; ">
+  </div>
+</li>
+<li class="slider">
+  <div class="slider-item">
+    <img src="img/l10.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l11.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l12.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l13.jpg" style="width: 200px;height: 200px; ">
+  </div>
+  <div class="slider-item">
+    <img src="img/l14.jpg" style="width: 200px;height: 200px; ">
+  </div>
+</li>
+</div>
         <h1>リヴァプール選手一覧</h1>
         <hr>
     <div><table>
@@ -27,12 +80,12 @@
         echo '<td>', $row['co'], '</td>';
         echo '<td>', $row['name'], '</td>';
         echo '<td>';
-        echo '<button type="submit">更新</button>';
+        echo '<button class="btn" type="submit" href="update.php">更新</button>';
         echo '</td>';
         echo '<td>';
         echo '<form action="delete.php" method="post">';
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
-        echo '<button type="submit">削除</button>';
+        echo '<button Class="btn" type="submit">削除</button>';
         echo '</form>';
         echo '</td>';
         echo '</tr>';
@@ -40,6 +93,7 @@
     }
 ?>
     </table></div>
-<p><button onclick="location.href='insert.php'">選手登録</button>
+<p class="button008">
+	<a href="insert.php">選手登録</a></p>
     </body>
 </html>
